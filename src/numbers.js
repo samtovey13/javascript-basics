@@ -19,15 +19,15 @@ const power = (a, b) => {
 };
 
 const round = a => {
-  // your code here
+  return Math.round(a);
 };
 
 const roundUp = a => {
-  // your code here
+  return Math.ceil(a);
 };
 
 const roundDown = a => {
-  // your code here
+  return Math.floor(a);
 };
 
 const absolute = a => {

@@ -57,7 +57,7 @@ describe("power", () => {
 });
 
 describe("round", () => {
-  xit("rounds the number to the nearest integer", () => {
+  it("rounds the number to the nearest integer", () => {
     expect(round(2.1)).toEqual(2);
     expect(round(9.7)).toEqual(10);
     expect(round(5.5)).toEqual(6);
@@ -65,7 +65,7 @@ describe("round", () => {
 });
 
 describe("roundUp", () => {
-  xit("rounds the number up to the nearest integer", () => {
+  it("rounds the number up to the nearest integer", () => {
     expect(roundUp(2.1)).toEqual(3);
     expect(roundUp(9.7)).toEqual(10);
     expect(roundUp(5.5)).toEqual(6);
@@ -73,7 +73,7 @@ describe("roundUp", () => {
 });
 
 describe("roundDown", () => {
-  xit("rounds the number down to the nearest integer", () => {
+  it("rounds the number down to the nearest integer", () => {
     expect(roundDown(2.1)).toEqual(2);
     expect(roundDown(9.7)).toEqual(9);
     expect(roundDown(5.5)).toEqual(5);
