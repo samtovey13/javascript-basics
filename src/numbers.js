@@ -31,15 +31,15 @@ const roundDown = a => {
 };
 
 const absolute = a => {
-  // your code here
+  return Math.abs(a);
 };
 
 const quotient = (a, b) => {
-  // your code here
+  return Math.trunc(a/b);
 };
 
 const remainder = (a, b) => {
-  // your code here
+  return a%b;
 };
 
 module.exports = {
