@@ -1,61 +1,73 @@
 const negate = a => {
-  // your code here
+  return !a;
 };
 
 const both = (a, b) => {
-  // your code here
+  return a && b;
 };
 
 const either = (a, b) => {
-  // your code here
+  return a || b;
 };
 
 const none = (a, b) => {
-  // your code here
+  return !a && !b;
 };
 
 const one = (a, b) => {
-  // your code here
+  return (a || b) && !(a && b);
 };
 
 const truthiness = a => {
-  // your code here
+  return !(!a);
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  return a === b;
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b;
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b;
 };
 
 const isOdd = a => {
-  // your code here
+  return a%2 === 1;
 };
 
 const isEven = a => {
-  // your code here
+  return a%2 === 0;
 };
 
 const isSquare = a => {
-  // your code here
+  return (a ** 0.5) % 1 === 0;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  return string[0] === char;
 };
 
 const containsVowels = string => {
-  // your code here
+  let newString = string.toUpperCase();
+  let vowels = ["A", "E", "I", "O", "U"]
+  for (let i=0; i<vowels.length; i++) {
+    if (newString.includes(vowels[i])) {
+      return true;
+    }
+  }
+  return false;
 };
 
 const isLowerCase = string => {
-  // your code here
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] !== string[i].toLowerCase()) {
+      return false;
+    }
+  }
+  return true;
 };
 
 module.exports = {
