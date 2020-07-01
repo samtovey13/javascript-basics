@@ -26,6 +26,8 @@ const getAges = people => {
   }
   return ages;
 };
+// better solution:
+// people.map(person => person.age);
 
 const findByName = (name, people) => {
   for (let i=0; i<people.length; i++) {
@@ -34,6 +36,8 @@ const findByName = (name, people) => {
     }
   }
 };
+// better solution:
+//people.find(obj => obj.name === name);
 
 const findHondas = cars => {
   const hondas = [];
@@ -44,6 +48,8 @@ const findHondas = cars => {
   }
   return hondas;
 };
+// better solution:
+// cars.filter(obj => obj.manufacturer === "Honda");
 
 const averageAge = people => {
   let total = 0;
@@ -52,6 +58,10 @@ const averageAge = people => {
   }
   return total / people.length;
 };
+// better solution:
+// const totalAge = people.reduce((runningTotal, currentPerson) => {
+//  return runningTotal + currentPerson.age;
+// }, 0);
 
 const createTalkingPerson = (name, age) => {
   const talkingPerson = {
@@ -59,6 +69,7 @@ const createTalkingPerson = (name, age) => {
     age: age,
     introduce(friend) {
       return "Hi " + friend + ", my name is " + this.name + " and I am " + this.age + "!";
+      // alternative: `Hi ${strangersName}, my name is ${name} and I am ${age}!`;
     }
   }
   return talkingPerson;
